@@ -1,0 +1,66 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: lightcoral;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: darkviolet;
+    margin-bottom: 20px;
+}
+
+.storybook {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+    perspective: 1000px;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.8s ease;
+    transform-origin: left;
+    padding: 30px;
+    text-align: left;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    display: block;
+}
+
+
+.page.flipped {
+    display: block;
+    transform: rotateY(-180deg);
+}
+
+h2 {
+    color: darkblue;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    color: darkgreen;
+}
+
+button {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: orange;
+}
